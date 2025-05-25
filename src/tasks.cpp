@@ -1,7 +1,5 @@
 #include "tasks.h"
-
 #include <cmath>
-
 #include "circle.h"
 
 
