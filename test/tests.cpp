@@ -2,9 +2,14 @@
 
 #include <gtest/gtest.h>
 
+#include <cmath>
 #include <cstdint>
 
 #include "circle.h"
+#include "tasks.h"
+
+
+const double EPS = 1e-9;
 
 TEST(CircleTest, Constructor) {
   Circle c(5.0);

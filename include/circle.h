@@ -8,7 +8,6 @@ class Circle {
   double radius;
   double ference;
   double area;
-  static const double PI;
 
  public:
   explicit Circle(double r);
@@ -18,6 +17,7 @@ class Circle {
   double getRadius() const;
   double getFerence() const;
   double getArea() const;
+  static const double PI;
 };
 
 #endif  // INCLUDE_CIRCLE_H_
