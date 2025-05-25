@@ -8,7 +8,6 @@
 #include "circle.h"
 #include "tasks.h"
 
-
 const double EPS = 1e-9;
 
 TEST(CircleTest, Constructor) {
@@ -28,14 +27,16 @@ TEST(CircleTest, SetRadius) {
 
 TEST(CircleTest, SetFerence) {
   Circle c(0.0);
-  c.setFerence(31.415926535);
+  double exact_ference = 2 * Circle::PI * 5.0;
+  c.setFerence(exact_ference);
   EXPECT_NEAR(c.getRadius(), 5.0, EPS);
   EXPECT_NEAR(c.getArea(), Circle::PI * 25.0, EPS);
 }
 
 TEST(CircleTest, SetArea) {
   Circle c(0.0);
-  c.setArea(78.5398);
+  double exact_area = Circle::PI * 25.0;
+  c.setArea(exact_area);
   EXPECT_NEAR(c.getRadius(), 5.0, EPS);
   EXPECT_NEAR(c.getFerence(), 2 * Circle::PI * 5.0, EPS);
 }
