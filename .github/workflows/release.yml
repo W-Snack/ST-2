@@ -14,4 +14,4 @@ jobs:
     - name: make
       run: cd build && make
     - name: Run Test
-      run: cd build && ./tests
+      run: /home/runner/work/ST-2/ST-2/build/test/ST-2.test
